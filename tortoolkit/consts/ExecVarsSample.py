@@ -15,6 +15,7 @@ except:
 
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
         ALD_USR = []
+        OWNER_ID = 0
         
         # Google Drive Index Link should include the base dir also See readme for more info
         GD_INDEX_URL = False
@@ -66,6 +67,19 @@ except:
         # Max size of the torrent allowed
         MAX_TORRENT_SIZE = 10
 
+        # Set this to your bot username if you want to add the username of your bot at the end of the commands like
+        # /leech@TorToolkitBot so the value will be @TorToolkitBot
+        BOT_CMD_POSTFIX = "" 
+
+        # Time out for the status Delete.
+        STATUS_DEL_TOUT = 20
+
+        # Allow the user settings to be accessed in private
+        USETTINGS_IN_PRIVATE = False
+
+        # Torrent max time to collect metadata in seconds
+        TOR_MAX_TOUT = 180
+
         # This is to stop someone from abusing the system by imposing the limit
         # [<GBs of total torrent sapce>, <Number of youtube videos allowed to download>, <Number of youtube playlists allowed to download>]
         USER_CAP_ENABLE = False
@@ -78,6 +92,7 @@ except:
         FORCE_DOCS_USER = False
         FAST_UPLOAD = True
         METAINFO_BOT = False
+        EXPRESS_UPLOAD = True
         
 
 
